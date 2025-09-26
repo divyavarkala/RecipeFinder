@@ -173,46 +173,6 @@ body {
   background: #e25c3d;
 }
 
-/* --- New Filter Styles --- */
-.filters-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 25px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.filter-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.filter-group label {
-  color: white;
-  margin-bottom: 5px;
-  font-weight: 500;
-}
-
-.filter-group select {
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: none;
-}
-
-.checkbox-group {
-  display: flex;
-  gap: 10px;
-}
-
-.checkbox-group label {
-  font-size: 0.9rem;
-  color: white;
-}
-
 /* --- New Info Sections --- */
 .info-section {
   padding: 60px 20px;
@@ -244,7 +204,7 @@ footer {
   margin-top: 40px;
 }
 
-/* Loading State */
+/* Loading State (from previous changes) */
 .recipes-section.loading {
   display: flex;
   justify-content: center;
@@ -270,87 +230,5 @@ footer {
 @keyframes spin {
   to {
     transform: rotate(360deg);
-  }
-}
-
-/* --- Responsive Adjustments --- */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 15px 20px;
-    text-align: center;
-  }
-
-  .nav-links {
-    margin-top: 10px;
-    gap: 15px;
-    padding: 0;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .search-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .search-container input {
-    width: 90%;
-  }
-
-  .search-container button {
-    width: 90%;
-  }
-
-  .filters-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .filter-group {
-    width: 90%;
-    align-items: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    padding: 15px;
-  }
-
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-  }
-
-  .recipes-section {
-    padding: 20px 10px;
-    grid-template-columns: 1fr;
-  }
-
-  .recipe-card {
-    width: 100%;
-  }
-
-  footer {
-    font-size: 0.8rem;
   }
 }
