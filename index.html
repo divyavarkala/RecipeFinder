@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🍲 Recipe Finder</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#recipes">Recipes</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Discover Your Next Favorite Meal</h1>
+<p>Search by ingredients and unlock a world of new recipes ✨</p>
+      <div class="search-container">
+        <input type="text" id="ingredients" placeholder="e.g. tomato, chicken, onion" />
+        <button id="searchBtn">Search</button>
+      </div>
+      <label class="strict-label">
+        <input type="checkbox" id="strictModeToggle" />
+        Strict Mode (only exact recipes)
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section id="recipes" class="recipes-section"></section>
+  </main>
+  
+  <section id="about" class="info-section">
+    <h2>About Us</h2>
+    <p>Welcome to Recipe Finder! Our mission is to help you create delicious meals with the ingredients you already have. We believe that great cooking starts with simple steps and a little inspiration. Our tool uses the powerful Spoonacular API to match your ingredients with a world of culinary possibilities.</p>
+  </section>
+
+  <section id="contact" class="info-section">
+    <h2>Contact</h2>
+    <p>Have a question or feedback? We'd love to hear from you! Please reach out to us at:</p>
+    <p>Email: contact@recipefinder.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
+  </section>
+
+  <footer>
+    <p>Powered by Spoonacular API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
